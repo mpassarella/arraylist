@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+INIT_SIZE	src/arraylist.h	1;"	d
+additem	src/arraylist.c	/^int additem(arrlist *p, void *pitem) {$/;"	f
+arrlist	src/arraylist.h	/^} arrlist;$/;"	t	typeref:struct:__anon1
+arrnew	src/arraylist.c	/^arrlist* arrnew() {$/;"	f
+clear	src/arraylist.c	/^void clear(arrlist *p) {$/;"	f
+delitem	src/arraylist.c	/^int delitem(arrlist *p, int position) {$/;"	f
+items	src/arraylist.h	/^    void **items;$/;"	m	struct:__anon1
+main	src/test.c	/^int main(int argc, char **argv) {$/;"	f
+size	src/arraylist.h	/^    int size;$/;"	m	struct:__anon1
+ubound	src/arraylist.h	/^    int ubound;$/;"	m	struct:__anon1
