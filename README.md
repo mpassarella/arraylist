@@ -6,8 +6,10 @@ Arraylist functions for C developers
 * *int* **size**: *Number of items currently stored in the arraylist*
 * *int* **ubound**: *Current size of allocated memory spaces to accomodate future items*
 * *void* **items**: *Array of pointers to stored items*
+
 ## Defined constants
 * **INIT_SIZE**: *Number of initially allocated items when the array is instatiated*
+
 ## Functions
 *  _arrlist* arrnew()_
     * Creates a new, blank, arraylist and returns its pointer
