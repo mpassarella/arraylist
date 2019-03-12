@@ -1,5 +1,6 @@
 # arraylist
-Arraylist functions for C developers
+*ArrayList functions for C developers*  
+This minimal projects is aimed to give a simple procedural interface to manage dinamically allocated arraylists in C
 ## Internal structure
 **Type** arrlist  
 ### Properties
