@@ -26,7 +26,6 @@ This minimal projects is aimed to give a simple procedural interface to manage d
 ```
     arrlist *a = arrnew();
     printf("Size %d\r\n", a->size);
-
 ```
 ### Add and item to the arraylist
 ```
