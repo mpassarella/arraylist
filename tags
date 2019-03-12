@@ -4,13 +4,18 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+GENERIC_ERROR	src/arraylist.h	2;"	d
+GENERIC_OK	src/arraylist.h	3;"	d
 INIT_SIZE	src/arraylist.h	1;"	d
 additem	src/arraylist.c	/^int additem(arrlist *p, void *pitem) {$/;"	f
 arrlist	src/arraylist.h	/^} arrlist;$/;"	t	typeref:struct:__anon1
 arrnew	src/arraylist.c	/^arrlist* arrnew() {$/;"	f
+arrnew_size	src/arraylist.c	/^arrlist* arrnew_size(int initial_size) {$/;"	f
 clear	src/arraylist.c	/^void clear(arrlist *p) {$/;"	f
 delitem	src/arraylist.c	/^int delitem(arrlist *p, int position) {$/;"	f
+delitems	src/arraylist.c	/^int delitems(arrlist *p, int position) {$/;"	f
 items	src/arraylist.h	/^    void **items;$/;"	m	struct:__anon1
 main	src/test.c	/^int main(int argc, char **argv) {$/;"	f
 size	src/arraylist.h	/^    int size;$/;"	m	struct:__anon1
+splice	src/arraylist.c	/^int splice(arrlist *s, arrlist *p, int position) {$/;"	f
 ubound	src/arraylist.h	/^    int ubound;$/;"	m	struct:__anon1

@@ -6,8 +6,7 @@
 int main(int argc, char **argv) {
     
     arrlist *a = arrnew();
-
-    printf("Size %d\r\n", a->size);
+    arrlist *p = arrnew();
 
     additem(a, "Cippa lippa 0"); 
     additem(a, "Cippa lippa 1"); 
@@ -20,45 +19,70 @@ int main(int argc, char **argv) {
     additem(a, "Cippa lippa 8"); 
     additem(a, "Cippa lippa 9"); 
     additem(a, "Cippa lippa 10"); 
-    
-    for(int i=0; i<a->size; i++) {
-    
-        printf("Elemento %s\r\n", (char*)a->items[i]);
-    }
+    additem(a, "Cippa lippa 11"); 
+    additem(a, "Cippa lippa 12"); 
+    additem(a, "Cippa lippa 13"); 
+    additem(a, "Cippa lippa 14"); 
 
     printf("Size %d\r\n", a->size);
 
-    delitem(a, 9);
-    printf("Size %d\r\n", a->size);
+    splice(a, p, 5);
 
-    for(int i=0; i<a->size; i++) {
+    printf("--------------------------\r\n");
+    printf("--------------------------\r\n");
+    printf("--------------------------\r\n");
     
-        printf("Elemento %s\r\n", (char*)a->items[i]);
-    }
-
-    delitem(a, 0);
-    printf("Size %d\r\n", a->size);
-
     for(int i=0; i<a->size; i++) {
-    
-        printf("Elemento %s\r\n", (char*)a->items[i]);
-    }
+        
+        printf("Elemento A: %s\r\n", (char*)a->items[i]);
+    } 
 
-    delitem(a, a->size - 1);
-    printf("Size %d\r\n", a->size);
+    printf("--------------------------\r\n");
 
-    for(int i=0; i<a->size; i++) {
-    
-        printf("Elemento %s\r\n", (char*)a->items[i]);
-    }
+    for(int i=0; i<p->size; i++) {
+        
+        printf("Elemento P: %s\r\n", (char*)p->items[i]);
+    } 
 
-    clear(a);
-    printf("Size %d\r\n", a->size);
 
-    for(int i=0; i<a->size; i++) {
-    
-        printf("Elemento %s\r\n", (char*)a->items[i]);
-    }
+//    for(int i=0; i<a->size; i++) {
+//    
+//        printf("Elemento %s\r\n", (char*)a->items[i]);
+//    }
+//
+//    printf("Size %d\r\n", a->size);
+//
+//    delitem(a, 9);
+//    printf("Size %d\r\n", a->size);
+//
+//    for(int i=0; i<a->size; i++) {
+//    
+//        printf("Elemento %s\r\n", (char*)a->items[i]);
+//    }
+//
+//    delitem(a, 0);
+//    printf("Size %d\r\n", a->size);
+//
+//    for(int i=0; i<a->size; i++) {
+//    
+//        printf("Elemento %s\r\n", (char*)a->items[i]);
+//    }
+//
+//    delitem(a, a->size - 1);
+//    printf("Size %d\r\n", a->size);
+//
+//    for(int i=0; i<a->size; i++) {
+//    
+//        printf("Elemento %s\r\n", (char*)a->items[i]);
+//    }
+//
+//    clear(a);
+//    printf("Size %d\r\n", a->size);
+//
+//    for(int i=0; i<a->size; i++) {
+//    
+//        printf("Elemento %s\r\n", (char*)a->items[i]);
+//    }
 
     return 0;
 }
