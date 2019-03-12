@@ -16,7 +16,7 @@ This minimal projects is aimed to give a simple procedural interface to manage d
 ## Functions
 *  _arrlist* arrnew()_
     * Creates a new, blank, arraylist and returns its pointer
-* _arrlist* arrnew(int initial_size)_
+* _arrlist* arrnew_size(int initial_size)_
     * Creates a new, blank, arraylist and returns its pointer with initial size of _initial_size_
 * _int additem(arrlist *p, void *pitem)_
     * Adds a new *pitem* item to the *p* arrlist and returns the size after the insertion. Returns _-1_ if something went wrong
