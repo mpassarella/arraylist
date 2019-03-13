@@ -31,22 +31,22 @@ This minimal projects is aimed to give a simple procedural interface to manage d
 
 ## How to use it
 ### Instantiation
-```
+```clike
     arrlist *a = arrnew();
     printf("Size %d\r\n", a->size);
 ```
 ### Instantiation with a specified size
-```
+```clike
     arrlist *a = arrnew_size(10);
     printf("Size %d\r\n", a->size);
 ```
 ### Add and item to the arraylist
-```
+```clike
     arrlist *a = arrnew();
     additem(a, "Item number 1");
 ```
 ### Remove all items from a position
-```
+```clike
     arrlist *a = arrnew();
     additem(a, "Item number 1"); 
     additem(a, "Item number 2"); 
@@ -56,7 +56,7 @@ This minimal projects is aimed to give a simple procedural interface to manage d
     delitems(a, 9);
 ```
 ### Remove an item from the arraylist
-```
+```clike
     arrlist *a = arrnew();
     additem(a, "Item number 1"); 
     additem(a, "Item number 2"); 
@@ -66,7 +66,7 @@ This minimal projects is aimed to give a simple procedural interface to manage d
     delitem(a, 9);
 ```
 ### Splice an arraylist into two at a specified position
-```
+```clike
     arrlist *a = arrnew();
     arrlist *b = arrnew();
     additem(a, "Item number 1"); 
@@ -77,7 +77,7 @@ This minimal projects is aimed to give a simple procedural interface to manage d
     splice(a, b, 5);
 ```
 ### Clear the arraylist
-```
+```clike
     arrlist *a = arrnew();
     additem(a, "Item number 1"); 
     additem(a, "Item number 2"); 
